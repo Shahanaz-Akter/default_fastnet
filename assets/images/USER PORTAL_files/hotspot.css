@@ -1,0 +1,176 @@
+
+html {
+    height: 100%;
+}
+
+body {
+	background-color: #fff;
+	color: #7e8ba3;
+	font: 300 1rem 1.5 Helvetica Neue sans-serif;
+	margin: 0;
+	min-height: 100%;
+}
+.align {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+}
+
+.grid {
+	margin: 0 auto;
+}
+.register {
+    background: url(../images/hotspot_bg.png);
+    background-color: #f1f1f1;
+    background-size: 100% 100%;
+    height: 588px;
+}
+
+h2 {
+	font-size: 2.75rem;
+	font-weight: 100;
+	margin: 0 0 1rem;
+	text-transform: uppercase;
+}
+span.or-text {
+    background-color: #f1f1f1;
+    padding: 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: -14px;
+    left: 0px;
+    margin: 0 auto;
+    text-align: center;
+    left: 43.5%;
+}
+span.or-bar {
+    width: 100%;
+    height: 2px;
+    background: #eee;
+    content: ' r';
+    /* overflow: hidden; */
+    /* clear: both; */
+    float: left;
+}
+.or-design {
+    width: 100%;
+    /* overflow: hidden; */
+    position: relative;
+    margin-top: 13px;
+    display: block;
+    clear: both;
+    float: left;
+}
+.other-login-section {
+    clear: both;
+    margin-top: 32px;
+    float: left;
+    width: 100%;
+}
+i.fa.fa-facebook.login-facebook {
+    background: #4267B2;
+    padding: 10px;
+    color: #fff;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+svg {
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
+.register {
+    box-shadow: 0 0 4px #000 inset;
+    text-align: center;
+    padding: 1rem 2rem;
+    width: 350px;
+    position: relative;
+}
+p.signup-account {
+    /* position: absolute; */
+    bottom: 10px;
+    margin-top: 22px;
+}
+.confirm-hotspot-lang {
+    background: #149eff;
+    border: 1px solid #149eff;
+    width: 125px !important;
+    margin-top: 12px;
+    border-radius: 18px;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    color: #fff;
+    font-size: 18px;
+    margin: 13px auto;
+    display: block;
+    overflow: hidden;
+}
+.input-group-append {
+    width: 100%;
+}
+.row.registration-htp-row,.row.registration-htp-row span {
+    width: 100%;
+}
+button.btn.btn-info.btn-hotspot-login {
+    background: #149eff;
+    border: 1px solid #149eff;
+    width: 100%;
+    margin-top: 12px;
+    border-radius: 8px;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
+.login-from {
+    background: #fff;
+    padding: 24px 10px;
+    margin-top: 14px;
+    min-height: 405px;
+    border-radius: 16px;
+}
+div#wify_registration {
+    width: 100%;
+}
+h3.modal-title.wifi-reg-title {
+    font-size: 18px;
+    padding-left: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+	.grid.align__item {
+	    width: 100%;
+	}
+	.register {
+	    width: 100%;
+	}
+	.align {
+	    align-items: center;
+	    display: block;
+	    flex-direction: row;
+	}
+}
+.hotspot_verfiy_desgin {
+    padding: 10px 25px;
+}
+button#dropdownMenuButton {
+    background: #08A7C3;
+    color: #fff;
+    width: 100%;
+    border-radius: 3px;
+    width: 120px;
+}
+.btn-htp {
+    /*background: red; */
+    width: 82px;
+    padding: 3px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.mikrotik-button-hotspot {
+    width: 116px;
+    float: left;
+    margin-right: 10px;
+    display: block;
+}
