@@ -6,6 +6,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
+    <style>
+        .mobile_banking {
+            list-style: none;
+        }
+
+        .mobile_banking .ww-call li {
+            position: relative;
+        }
+
+        .mobile_banking .ww-call li:before {
+            content: "•";
+            position: absolute;
+            left: -1em;
+            top: -10px;
+            font-size: 2rem;
+            color: red;
+        }
+
+
+
+        .mobile_payment {
+            list-style: none;
+        }
+
+        .mobile_payment .ww-call li {
+            position: relative;
+        }
+
+        .mobile_payment .ww-call li:before {
+            content: "•";
+            position: absolute;
+            left: -1em;
+            top: -10px;
+            font-size: 2rem;
+            color: red;
+        }
+
+        .bkash {
+            list-style: none;
+        }
+
+        .bkash .ww-call li {
+            position: relative;
+        }
+
+        .bkash .ww-call li:before {
+            content: "•";
+            position: absolute;
+            left: -1em;
+            top: -10px;
+            font-size: 2rem;
+            color: red;
+        }
+
+        .rocket {
+            list-style: none;
+        }
+
+        .rocket .ww-call li {
+            position: relative;
+        }
+
+        .rocket .ww-call li:before {
+            content: "•";
+            position: absolute;
+            left: -1em;
+            top: -10px;
+            font-size: 2rem;
+            color: red;
+        }
+
+        .nogod {
+            list-style: none;
+        }
+
+        .nogod .ww-call li {
+            position: relative;
+        }
+
+        .nogod .ww-call li:before {
+            content: "•";
+            position: absolute;
+            left: -1em;
+            top: -10px;
+            font-size: 2rem;
+            color: red;
+        }
+    </style>
+
     <!-- Link of CSS files -->
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -146,7 +237,7 @@
 
 
     <!-- Uni Banner Area Start -->
-    <div id="Features" class="why-we ptb-100 why-we-1">
+    <div id="Features" class="why-we why-we-1" style="margin: 40px 0px;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 order-lg-1 order-2 pb-1">
@@ -162,54 +253,53 @@
                                 <!-- <p>Source from our trusted manufacturers and suppliers in Bangladesh.</p> -->
                             </div>
 
-                            <button class="btn btn-lg ps-3 pe-3 pb-2" onclick="mobile_banking()"
-                                style="background: #ff0000; color: white;"> Mobile
+                            <button class="btn btn-outline-danger ps-3 pe-3 border border-danger pb-2"
+                                style="border-radius: 15px;"><i class="fas text-danger fa-credit-card fa-beat"></i>
+
+                                Mobile
                                 Banking</button>
-                            <button class="btn btn-outlier-danger btn-lg ps-3 pe-3 pb-2" onclick="mobile_payment()"
-                                style="background: #ff0000; color: white;"> Mobile
+                            <button class="btn btn-outline-danger  ps-3 pe-3 border border-danger pb-2"
+                                style="border-radius: 15px;"><i class="fas  text-danger fa-credit-card fa-beat"></i>
+                                Mobile
                                 Payment</button>
 
 
+                            <ul class="mobile_banking mt-5 mb-2">
 
+                                <div class="ww-call ul" style="font-size: 20px;">
 
-                            <div class="row mobile_banking mb-2">
-                                <div class="col-sm-6 col-md-6 col-lg-6">
-                                    <div class="ww-call ul" style="font-size: 20px;">
-                                        <li>Go to bKash Menu by dialing *247# Or Use bkash mobile app</li>
-                                    </div>
-                                    <div class="ww-call" style="font-size: 20px;">
-                                        <li>Choose Payment option by pressing 3</li>
-                                    </div>
-                                    <div class="ww-call" style="font-size: 20px;">
+                                    <li>Go to bKash Menu by dialing *247# Or Use
+                                        bkash mobile app</li>
+                                </div>
+                                <div class="ww-call" style="font-size: 20px;">
+                                    <li>Choose Payment option by pressing 3</li>
+                                </div>
+                                <div class="ww-call" style="font-size: 20px;">
 
-                                        <li>Enter our merchant number : 01872695473</li>
-                                    </div>
-                                    <div class="ww-call" style="font-size: 20px;">
-                                        <li>Enter BDT amount (monthly bill) : xxxx</li>
-                                    </div>
-                                    <div class="ww-call" style="font-size: 20px;">
-                                        <li>Enter your Client ID as Reference : xxxx</li>
-                                    </div>
-
-                                    <div class="ww-call" style="font-size: 20px;">
-                                        <li>Enter the counter number : 1</li>
-                                    </div>
-
-                                    <div class="ww-call" style="font-size: 20px;">
-                                        <li>Now enter your PIN to confirm: xxxx</li>
-                                    </div>
-                                    <div class="ww-call" style="font-size: 20px;">
-                                        <li>Done! you will get a confirmation SMS!</li>
-                                    </div>
+                                    <li>Enter our merchant number : 01872695473</li>
+                                </div>
+                                <div class="ww-call" style="font-size: 20px;">
+                                    <li>Enter BDT amount (monthly bill) : xxxx</li>
+                                </div>
+                                <div class="ww-call" style="font-size: 20px;">
+                                    <li>Enter your Client ID as Reference : xxxx</li>
                                 </div>
 
-                                <div class="col-sm-6 col-md-6 col-lg-6">
-                                    <img src="assets/images/logo.png" alt="" height="600" width="600">
+                                <div class="ww-call" style="font-size: 20px;">
+                                    <li>Enter the counter number : 1</li>
                                 </div>
 
-                            </div>
+                                <div class="ww-call" style="font-size: 20px;">
+                                    <li>Now enter your PIN to confirm: xxxx</li>
+                                </div>
+                                <div class="ww-call" style="font-size: 20px;">
+                                    <li>Done! you will get a confirmation SMS!</li>
+                                </div>
 
-                            <div class="mobile_payment mb-2 d-none">
+                            </ul>
+
+
+                            <ul class="mobile_payment mt-5 mb-2 d-none">
 
                                 <div class="ww-call ul" style="font-size: 20px;">
                                     <li>Go to bKash Menu by dialing *247# Or Use bkash mobile app</li>
@@ -238,141 +328,167 @@
                                 <div class="ww-call" style="font-size: 20px;">
                                     <li>Done! you will get a confirmation SMS!</li>
                                 </div>
-                            </div>
+                            </ul>
 
                         </div>
 
 
-                        <div class="ww-call-area mb-3">
-
-                            <div class="default-section-title mb-2">
-                                <h3 class="text-danger">Pay bill with Mobile Banking?</h3>
-                                <h5>You can pay with Mobile banking by following these instructions</h5>
-                                <!-- <p>Source from our trusted manufacturers and suppliers in Bangladesh.</p> -->
-                            </div>
-
-                            <button class="btn btn-lg btn-success ps-5 pe-5 pb-2" onclick="bkash()">Bkash</button>
-                            <button class="btn btn-danger btn-lg ps-5 pe-5 pb-2" onclick="rocket()">Rocket</button>
-                            <button class="btn btn-danger btn-lg ps-5 pe-5 pb-2" onclick="nagad()">Nagad</button>
-
-
-                            <div class="bkash mb-2">
-
-                                <div class="ww-call ul" style="font-size: 20px;">
-                                    <li>Go to bKash Menu by dialing *247# Or Use bkash mobile app</li>
-                                </div>
-                                <div class="ww-call" style="font-size: 20px;">
-                                    <li>Choose Payment option by pressing 3</li>
-                                </div>
-                                <div class="ww-call" style="font-size: 20px;">
-
-                                    <li>Enter our merchant number : 01872695473</li>
-                                </div>
-                                <div class="ww-call" style="font-size: 20px;">
-                                    <li>Enter BDT amount (monthly bill) : xxxx</li>
-                                </div>
-                                <div class="ww-call" style="font-size: 20px;">
-                                    <li>Enter your Client ID as Reference : xxxx</li>
-                                </div>
-
-                                <div class="ww-call" style="font-size: 20px;">
-                                    <li>Enter the counter number : 1</li>
-                                </div>
-
-                                <div class="ww-call" style="font-size: 20px;">
-                                    <li>Now enter your PIN to confirm: xxxx</li>
-                                </div>
-                                <div class="ww-call" style="font-size: 20px;">
-                                    <li>Done! you will get a confirmation SMS!</li>
-                                </div>
-                            </div>
-
-
-                            <div class="rocket mt-2 d-none">
-
-                                <div class="ww-call ul" style="font-size: 20px;">
-                                    <li>Go to bKash Menu by dialing *247# Or Use bkash mobile app</li>
-                                </div>
-                                <div class="ww-call" style="font-size: 20px;">
-                                    <li>Choose Payment option by pressing 3</li>
-                                </div>
-                                <div class="ww-call" style="font-size: 20px;">
-
-                                    <li>Enter our merchant number : 01872695473</li>
-                                </div>
-                                <div class="ww-call" style="font-size: 20px;">
-                                    <li>Enter BDT amount (monthly bill) : xxxx</li>
-                                </div>
-                                <div class="ww-call" style="font-size: 20px;">
-                                    <li>Enter your Client ID as Reference : xxxx</li>
-                                </div>
-
-                                <div class="ww-call" style="font-size: 20px;">
-                                    <li>Enter the counter number : 1</li>
-                                </div>
-
-                                <div class="ww-call" style="font-size: 20px;">
-                                    <li>Now enter your PIN to confirm: xxxx</li>
-                                </div>
-                                <div class="ww-call" style="font-size: 20px;">
-                                    <li>Done! you will get a confirmation SMS!</li>
-                                </div>
-                            </div>
-
-
-                            <div class="nogod mt-2 d-none">
-
-                                <div class="ww-call ul" style="font-size: 20px;">
-                                    <li>Go to bKash Menu by dialing *247# Or Use bkash mobile app</li>
-                                </div>
-                                <div class="ww-call" style="font-size: 20px;">
-                                    <li>Choose Payment option by pressing 3</li>
-                                </div>
-                                <div class="ww-call" style="font-size: 20px;">
-
-                                    <li>Enter our merchant number : 01872695473</li>
-                                </div>
-                                <div class="ww-call" style="font-size: 20px;">
-                                    <li>Enter BDT amount (monthly bill) : xxxx</li>
-                                </div>
-                                <div class="ww-call" style="font-size: 20px;">
-                                    <li>Enter your Client ID as Reference : xxxx</li>
-                                </div>
-
-                                <div class="ww-call" style="font-size: 20px;">
-                                    <li>Enter the counter number : 1</li>
-                                </div>
-
-                                <div class="ww-call" style="font-size: 20px;">
-                                    <li>Now enter your PIN to confirm: xxxx</li>
-                                </div>
-                                <div class="ww-call" style="font-size: 20px;">
-                                    <li>Done! you will get a confirmation SMS!</li>
-                                </div>
-                            </div>
-
-
-
-                        </div>
-
-
-                    </div>
-                </div>
-
-                <!-- <div class="col-lg-6 order-lg-2 order-1">
+                        <!-- <div class="col-lg-6 order-lg-2 order-1">
                     <div class="why-we-img pl-20">
                         <img src="assets/images/why-we/ww1.png" alt="image">
                     </div>
                 </div> -->
+                    </div>
+                </div>
             </div>
+
+
+
+
+
+            <div class="ww-call-area mb-3">
+
+                <div class="default-section-title mb-2">
+                    <h3 class="text-danger">Pay bill with Mobile Banking?</h3>
+                    <h5>You can pay with Mobile banking by following these instructions</h5>
+                    <!-- <p>Source from our trusted manufacturers and suppliers in Bangladesh.</p> -->
+                </div>
+
+                <button class="btn  btn-outline-danger ps-5 pe-5 pb-2" onclick="bkash()"
+                    style="border-radius: 15px;">Bkash</button>
+                <button class="btn  btn-outline-danger ps-5 pe-5 pb-2" onclick="rocket()"
+                    style="border-radius: 15px;">Rocket</button>
+                <button class="btn  btn-outline-danger ps-5 pe-5 pb-2" onclick="nagad()"
+                    style="border-radius: 15px;">Nagad</button>
+
+
+
+                <div class="d-flex gap-3" style="border:2px solid transparent;">
+
+                    <div style="border: 2px solid transparent; max-width: 50%; max-height:50%;">
+                        <ul class="bkash mt-5 mb-2">
+
+                            <div class="ww-call ul" style="font-size: 20px;">
+                                <li>Go to bKash Menu by dialing *247# Or Use bkash mobile app</li>
+                            </div>
+                            <div class="ww-call" style="font-size: 20px;">
+                                <li>Choose Payment option by pressing 3</li>
+                            </div>
+                            <div class="ww-call" style="font-size: 20px;">
+
+                                <li>Enter our merchant number : 01872695473</li>
+                            </div>
+                            <div class="ww-call" style="font-size: 20px;">
+                                <li>Enter BDT amount (monthly bill) : xxxx</li>
+                            </div>
+                            <div class="ww-call" style="font-size: 20px;">
+                                <li>Enter your Client ID as Reference : xxxx</li>
+                            </div>
+
+                            <div class="ww-call" style="font-size: 20px;">
+                                <li>Enter the counter number : 1</li>
+                            </div>
+
+                            <div class="ww-call" style="font-size: 20px;">
+                                <li>Now enter your PIN to confirm: xxxx</li>
+                            </div>
+                            <div class="ww-call mb-5" style="font-size: 20px;">
+                                <li>Done! you will get a confirmation SMS!</li>
+                            </div>
+
+
+
+                            <i class="ms-0 mt-5 text-danger fw-bold mb-5">FastNet BD billing
+                                will send you
+                                a mail with money
+                                receipt
+                            </i>
+                            <div class="text-center mt-4 mb-4"><a href="contact.html"> <button
+                                        class=" btn btn-lg btn-danger fw-bold pb-2">Click
+                                        Here </button></a></div>
+                        </ul>
+                    </div>
+
+                    <div class="mt-0">
+                        <img src="assets/images/portal_.jpg" height='350' width='350' alt="">
+                    </div>
+
+                </div>
+
+
+
+
+                <ul class="rocket mt-2 d-none">
+
+                    <div class="ww-call ul" style="font-size: 20px;">
+                        <li>Go to bKash Menu by dialing *247# Or Use bkash mobile app</li>
+                    </div>
+                    <div class="ww-call" style="font-size: 20px;">
+                        <li>Choose Payment option by pressing 3</li>
+                    </div>
+                    <div class="ww-call" style="font-size: 20px;">
+
+                        <li>Enter our merchant number : 01872695473</li>
+                    </div>
+                    <div class="ww-call" style="font-size: 20px;">
+                        <li>Enter BDT amount (monthly bill) : xxxx</li>
+                    </div>
+                    <div class="ww-call" style="font-size: 20px;">
+                        <li>Enter your Client ID as Reference : xxxx</li>
+                    </div>
+
+                    <div class="ww-call" style="font-size: 20px;">
+                        <li>Enter the counter number : 1</li>
+                    </div>
+
+                    <div class="ww-call" style="font-size: 20px;">
+                        <li>Now enter your PIN to confirm: xxxx</li>
+                    </div>
+                    <div class="ww-call" style="font-size: 20px;">
+                        <li>Done! you will get a confirmation SMS!</li>
+                    </div>
+                </ul>
+
+
+                <ul class="nogod mt-2 d-none">
+
+                    <div class="ww-call ul" style="font-size: 20px;">
+                        <li>Go to bKash Menu by dialing *247# Or Use bkash mobile app</li>
+                    </div>
+                    <div class="ww-call" style="font-size: 20px;">
+                        <li>Choose Payment option by pressing 3</li>
+                    </div>
+                    <div class="ww-call" style="font-size: 20px;">
+
+                        <li>Enter our merchant number : 01872695473</li>
+                    </div>
+                    <div class="ww-call" style="font-size: 20px;">
+                        <li>Enter BDT amount (monthly bill) : xxxx</li>
+                    </div>
+                    <div class="ww-call" style="font-size: 20px;">
+                        <li>Enter your Client ID as Reference : xxxx</li>
+                    </div>
+
+                    <div class="ww-call" style="font-size: 20px;">
+                        <li>Enter the counter number : 1</li>
+                    </div>
+
+                    <div class="ww-call" style="font-size: 20px;">
+                        <li>Now enter your PIN to confirm: xxxx</li>
+                    </div>
+                    <div class="ww-call" style="font-size: 20px;">
+                        <li>Done! you will get a confirmation SMS!</li>
+                    </div>
+                </ul>
+
+            </div>
+
         </div>
+
+
+    </div>
     </div>
 
-    <!-- Uni Banner Area End -->
-
-    <!-- Product Area Start -->
-
-    <!-- Product Area End -->
 
     <!-- Google Map Area Start -->
     <div id="Map" class="google-map pr-20">
