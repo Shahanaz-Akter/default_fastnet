@@ -17,6 +17,7 @@ This files table contents are outlined below>>>>>
 
 */
 @import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
+
 :root {
   --fontFamily: "Livvic", sans-serif;
   --mainColor: #ff0000;
@@ -537,7 +538,7 @@ a.meanmenu-reveal {
   position: relative;
 }
 
-.btn-check:focus + .btn-primary,
+.btn-check:focus+.btn-primary,
 .btn-primary:focus {
   background-color: var(--whiteColor);
   color: var(--blackColor);
@@ -729,15 +730,7 @@ a.meanmenu-reveal {
   visibility: hidden !important;
 }
 
-.main-nav
-  nav
-  .navbar-nav
-  .nav-item
-  .dropdown-menu
-  li
-  .dropdown-menu
-  li
-  .dropdown-menu {
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu {
   top: 20px;
   left: 100%;
   position: absolute;
@@ -750,15 +743,7 @@ a.meanmenu-reveal {
 }
 
 .main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover,
-.main-nav
-  nav
-  .navbar-nav
-  .nav-item
-  .dropdown-menu
-  li
-  .dropdown-menu
-  li
-  a.active {
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
   color: var(--mainColor);
 }
 
@@ -768,15 +753,7 @@ a.meanmenu-reveal {
   top: 5px !important;
 }
 
-.main-nav
-  nav
-  .navbar-nav
-  .nav-item
-  .dropdown-menu
-  li:hover
-  .dropdown-menu
-  li:hover
-  .dropdown-menu {
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li:hover .dropdown-menu li:hover .dropdown-menu {
   opacity: 1 !important;
   visibility: visible !important;
   top: 5px !important;
@@ -931,15 +908,22 @@ Header Responsive Area CSS
     -ms-flex-pack: center;
     justify-content: center;
   }
+
   .topbar-left-side {
     text-align: center;
   }
+
   .topbar-left-side ul li {
     margin-right: 7px;
     margin-left: 7px;
   }
+
   .topbar-left-area ul li {
     padding-top: 5px;
+  }
+
+  .p__ {
+    display: ;
   }
 }
 
@@ -949,9 +933,15 @@ Header Responsive Area CSS
     -ms-flex-pack: center;
     justify-content: center;
   }
+
   .topbar-left-side {
     text-align: center;
   }
+
+  .p__{
+    display:flex;
+  }
+
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -960,12 +950,15 @@ Header Responsive Area CSS
     margin-left: 13px;
     margin-right: 13px;
   }
+ 
 }
 
 @media only screen and (min-width: 1550px) {
   .main-nav .dropdown-toggle::after {
     top: 3px !important;
   }
+
+  
 }
 
 @media only screen and (max-width: 1199px) {
@@ -975,10 +968,12 @@ Header Responsive Area CSS
     position: relative;
     z-index: 5;
   }
+
   .mobile-nav {
     display: block;
     position: relative;
   }
+
   .mobile-nav .logo {
     top: 9px;
     left: 0px;
@@ -989,6 +984,7 @@ Header Responsive Area CSS
     text-transform: uppercase;
     text-decoration: none;
   }
+
   .mobile-nav nav .navbar-nav {
     max-height: 64vh;
     overflow-y: scroll;
@@ -999,36 +995,46 @@ Header Responsive Area CSS
     /* Handle */
     /* Handle on hover */
   }
+
   .mobile-nav nav .navbar-nav .nav-item a i {
     display: none;
   }
+
   .mobile-nav nav .navbar-nav::-webkit-scrollbar {
     width: 7px;
   }
+
   .mobile-nav nav .navbar-nav::-webkit-scrollbar-track {
     background: #f1f1f1;
   }
+
   .mobile-nav nav .navbar-nav::-webkit-scrollbar-thumb {
     background: #888;
   }
+
   .mobile-nav nav .navbar-nav::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+
   .mean-container .mean-bar {
     background-color: #ffffff;
     padding: 0;
   }
+
   .mean-container a.meanmenu-reveal {
     padding: 5px 2px 0 0;
     -webkit-transition: 0s !important;
     transition: 0s !important;
   }
+
   .main-nav {
     display: none !important;
   }
+
   .menu-sidebar {
     display: none;
   }
+
   .menu-small-device {
     z-index: 2;
     right: 50px;
@@ -1037,25 +1043,31 @@ Header Responsive Area CSS
     display: -ms-flexbox !important;
     display: flex !important;
   }
+
   .menu-small-device .default-button {
     padding: 8px;
     font-size: 13px;
     margin-left: 15px;
   }
+
   .menu-small-device .popup-button {
     height: 38px;
     width: 38px;
   }
+
   .meanclose {
     top: 60% !important;
   }
+
   .topbar-left-area {
     text-align: start;
   }
+
   .topbar-left-area ul li {
     margin-left: 5px;
     margin-right: 5px;
   }
+
   .mobile-nav {
     top: 0;
   }
@@ -1365,6 +1377,7 @@ Go Top CSS
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+
   50% {
     -webkit-transform: translateY(20px);
     transform: translateY(20px);
@@ -1376,6 +1389,7 @@ Go Top CSS
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+
   50% {
     -webkit-transform: translateY(20px);
     transform: translateY(20px);
@@ -1394,13 +1408,11 @@ Default Button Area CSS
   overflow: hidden;
   border-radius: 5px;
   color: var(--whiteColor);
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#ff0000),
-    to(#ff4949)
-  );
+  background-image: -webkit-gradient(linear,
+      left top,
+      left bottom,
+      from(#ff0000),
+      to(#ff4949));
   background-image: linear-gradient(to bottom, #ff0000, #ff4949);
   font-size: 15px;
   font-weight: 500;
@@ -1463,13 +1475,11 @@ Default Button Area CSS
   height: 0%;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#ff0000),
-    to(#ff4949)
-  );
+  background-image: -webkit-gradient(linear,
+      left top,
+      left bottom,
+      from(#ff0000),
+      to(#ff4949));
   background-image: linear-gradient(to bottom, #ff0000, #ff4949);
   position: absolute;
   left: 0;
@@ -1545,15 +1555,19 @@ Default Section Title Area CSS
   margin-left: auto;
   margin-right: auto;
 }
+
 #offer-body {
   color: black;
 }
+
 .offer-default-section-title-middle {
   max-width: 600px;
 }
-.offer-default-section-title-middle > #offers {
+
+.offer-default-section-title-middle>#offers {
   color: red;
 }
+
 @media screen and (max-width: 600px) {
   .control-media {
     padding-right: 30px;
@@ -1783,6 +1797,7 @@ Index 01 Features Area CSS
   background-color: var(--whiteColor);
   position: relative;
 }
+
 .offer-features-card {
   /* padding: 30px 25px; */
   border-radius: 10px;
@@ -1792,6 +1807,7 @@ Index 01 Features Area CSS
   background-color: var(--whiteColor);
   position: relative;
 }
+
 .offer-text-box {
   padding: 15px 20px;
 }
@@ -1803,13 +1819,11 @@ Index 01 Features Area CSS
   border-radius: 0% 50% 50% 50%;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  background-image: -webkit-gradient(
-    linear,
-    right top,
-    left top,
-    from(#ff0000),
-    to(#fe625e)
-  );
+  background-image: -webkit-gradient(linear,
+      right top,
+      left top,
+      from(#ff0000),
+      to(#fe625e));
   background-image: linear-gradient(to left, #ff0000, #fe625e);
   position: absolute;
   right: 0;
@@ -2031,13 +2045,11 @@ Index 01 Services Area CSS
   border-radius: 50% 0% 50% 0%;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(#fd8251),
-    to(#fe625e)
-  );
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      from(#fd8251),
+      to(#fe625e));
   background-image: linear-gradient(to top, #fd8251, #fe625e);
   position: absolute;
   left: 0;
@@ -2334,13 +2346,11 @@ Index 01 Pricing Area CSS
   position: relative;
   -webkit-box-shadow: var(--boxShadow);
   box-shadow: var(--boxShadow);
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#ff0000),
-    to(#fe625e)
-  );
+  background-image: -webkit-gradient(linear,
+      left top,
+      right top,
+      from(#ff0000),
+      to(#fe625e));
   background-image: linear-gradient(to right, #ff0000, #fe625e);
   border: 5px solid var(--whiteColor);
   margin-left: auto;
@@ -2553,13 +2563,11 @@ Index 01 Testimonials Area CSS
   border-radius: 0;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(#ff0000),
-    to(#fe625e)
-  );
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      from(#ff0000),
+      to(#fe625e));
   background-image: linear-gradient(to top, #ff0000, #fe625e);
   position: absolute;
   left: 0;
@@ -2684,11 +2692,7 @@ Index 01 Testimonials Area CSS
 
 .testimonial-slider-area .center .testimonial-card .testimonial-card-content p,
 .testimonial-slider-area .center .testimonial-card .testimonial-card-content h5,
-.testimonial-slider-area
-  .center
-  .testimonial-card
-  .testimonial-card-content
-  span {
+.testimonial-slider-area .center .testimonial-card .testimonial-card-content span {
   color: var(--whiteColor);
 }
 
@@ -2882,13 +2886,11 @@ Index 01 Blog Area CSS
   border-radius: 5px;
   text-align: center;
   color: var(--whiteColor);
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(#fd8251),
-    to(#fe625e)
-  );
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      from(#fd8251),
+      to(#fe625e));
   background-image: linear-gradient(to top, #fd8251, #fe625e);
   position: relative;
   margin-top: -35px;
@@ -3108,13 +3110,11 @@ Index 02 Features Area CSS
   height: 0%;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(#fd8251),
-    to(#fe625e)
-  );
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      from(#fd8251),
+      to(#fe625e));
   background-image: linear-gradient(to top, #fd8251, #fe625e);
   position: absolute;
   left: 50%;
@@ -3427,13 +3427,11 @@ Index 02 Services Area CSS
   height: 0%;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(#fd8251),
-    to(#fe625e)
-  );
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      from(#fd8251),
+      to(#fe625e));
   background-image: linear-gradient(to top, #fd8251, #fe625e);
   position: absolute;
   left: 50%;
@@ -3677,13 +3675,11 @@ Index 03 Service Area CSS
   height: 0%;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(#ff0000),
-    to(#fe625e)
-  );
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      from(#ff0000),
+      to(#fe625e));
   background-image: linear-gradient(to top, #ff0000, #fe625e);
   position: absolute;
   left: 0;
@@ -3911,13 +3907,11 @@ Index 03 About Area CSS
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(#fd8251),
-    to(#fe625e)
-  );
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      from(#fd8251),
+      to(#fe625e));
   background-image: linear-gradient(to top, #fd8251, #fe625e);
   position: absolute;
   right: 0;
@@ -4019,13 +4013,11 @@ Index 03 Pricing Area CSS
   height: 0%;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(#fd8251),
-    to(#fe625e)
-  );
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      from(#fd8251),
+      to(#fe625e));
   background-image: linear-gradient(to top, #fd8251, #fe625e);
   position: absolute;
   left: 0;
@@ -4581,13 +4573,11 @@ Inner About Area CSS
 }
 
 .inner-about-img-area .inner-about-img-card {
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(#ff0000),
-    to(#fe625e)
-  );
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      from(#ff0000),
+      to(#fe625e));
   background-image: linear-gradient(to top, #ff0000, #fe625e);
   width: 200px;
   height: 150px;
@@ -4787,13 +4777,11 @@ Team Area CSS
   transition: 0.8s ease-in-out;
   -webkit-box-shadow: var(--boxShadow);
   box-shadow: var(--boxShadow);
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(#fd8251),
-    to(#fe625e)
-  );
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      from(#fd8251),
+      to(#fe625e));
   background-image: linear-gradient(to top, #fd8251, #fe625e);
   position: absolute;
   left: 0;
@@ -5057,13 +5045,11 @@ Pagination Area CSS
   height: 0%;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(#fd8251),
-    to(#fe625e)
-  );
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      from(#fd8251),
+      to(#fe625e));
   background-image: linear-gradient(to top, #fd8251, #fe625e);
   position: absolute;
   left: 0;
@@ -5121,13 +5107,11 @@ FAQ Area CSS
   justify-content: center;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(#fd8251),
-    to(#fe625e)
-  );
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      from(#fd8251),
+      to(#fe625e));
   background-image: linear-gradient(to top, #fd8251, #fe625e);
   color: var(--whiteColor);
   position: absolute;
@@ -5162,13 +5146,11 @@ FAQ Area CSS
   color: var(--whiteColor);
   border-radius: 5px 5px 0px 0px;
   background-color: var(--mainColor);
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(#fd8251),
-    to(#fe625e)
-  );
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      from(#fd8251),
+      to(#fe625e));
   background-image: linear-gradient(to top, #fd8251, #fe625e);
 }
 
@@ -5177,13 +5159,11 @@ FAQ Area CSS
   transform: rotate(180deg);
   color: var(--blackColor);
   background-color: var(--whiteColor);
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(#fd825100),
-    to(#fe635e00)
-  );
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      from(#fd825100),
+      to(#fe635e00));
   background-image: linear-gradient(to top, #fd825100, #fe635e00);
 }
 
@@ -5976,11 +5956,11 @@ Product Details Page Area CSS
   cursor: pointer;
 }
 
-.review-stars input:nth-child(1):checked ~ label:nth-of-type(-n + 1),
-.review-stars input:nth-child(2):checked ~ label:nth-of-type(-n + 2),
-.review-stars input:nth-child(3):checked ~ label:nth-of-type(-n + 3),
-.review-stars input:nth-child(4):checked ~ label:nth-of-type(-n + 4),
-.review-stars input:nth-child(5):checked ~ label:nth-of-type(-n + 5) {
+.review-stars input:nth-child(1):checked~label:nth-of-type(-n + 1),
+.review-stars input:nth-child(2):checked~label:nth-of-type(-n + 2),
+.review-stars input:nth-child(3):checked~label:nth-of-type(-n + 3),
+.review-stars input:nth-child(4):checked~label:nth-of-type(-n + 4),
+.review-stars input:nth-child(5):checked~label:nth-of-type(-n + 5) {
   background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='rgba(255, 217, 0, 0.973)' stroke='rgba(255, 217, 0, 0.973)' stroke-width='38' d='M259.216 29.942L330.27 173.92l158.89 23.087L374.185 309.08l27.145 158.23-142.114-74.698-142.112 74.698 27.146-158.23L29.274 197.007l158.89-23.088z' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
 
@@ -6391,7 +6371,7 @@ Checkout Area
   display: none;
 }
 
-.payment-box .payment-method p [type="radio"]:checked + label {
+.payment-box .payment-method p [type="radio"]:checked+label {
   padding-left: 27px;
   cursor: pointer;
   display: block;
@@ -6401,7 +6381,7 @@ Checkout Area
   margin-bottom: 15px;
 }
 
-.payment-box .payment-method p [type="radio"]:checked + label::before {
+.payment-box .payment-method p [type="radio"]:checked+label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -6413,7 +6393,7 @@ Checkout Area
   background: #ffffff;
 }
 
-.payment-box .payment-method p [type="radio"]:checked + label::after {
+.payment-box .payment-method p [type="radio"]:checked+label::after {
   content: "";
   width: 12px;
   height: 12px;
@@ -6434,7 +6414,7 @@ Checkout Area
   display: none;
 }
 
-.payment-box .payment-method p [type="radio"]:not(:checked) + label {
+.payment-box .payment-method p [type="radio"]:not(:checked)+label {
   padding-left: 27px;
   cursor: pointer;
   display: block;
@@ -6444,7 +6424,7 @@ Checkout Area
   margin-bottom: 15px;
 }
 
-.payment-box .payment-method p [type="radio"]:not(:checked) + label::before {
+.payment-box .payment-method p [type="radio"]:not(:checked)+label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -6456,7 +6436,7 @@ Checkout Area
   background: #ffffff;
 }
 
-.payment-box .payment-method p [type="radio"]:not(:checked) + label::after {
+.payment-box .payment-method p [type="radio"]:not(:checked)+label::after {
   content: "";
   width: 12px;
   height: 12px;
@@ -6501,13 +6481,11 @@ Blog Details Area
   border-radius: 0px 5px 5px 0px;
   text-align: center;
   color: var(--whiteColor);
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(#fd8251),
-    to(#fe625e)
-  );
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      from(#fd8251),
+      to(#fe625e));
   background-image: linear-gradient(to top, #fd8251, #fe625e);
   position: absolute;
   left: 0;
@@ -6805,13 +6783,11 @@ Contact Page CSS
   border-radius: 0% 50% 50% 50%;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  background-image: -webkit-gradient(
-    linear,
-    right top,
-    left top,
-    from(#ff0000),
-    to(#fe625e)
-  );
+  background-image: -webkit-gradient(linear,
+      right top,
+      left top,
+      from(#ff0000),
+      to(#fe625e));
   background-image: linear-gradient(to left, #ff0000, #fe625e);
   position: absolute;
   right: 0;
@@ -6921,7 +6897,8 @@ Contact Page CSS
   padding: 5px 10px;
   box-shadow: 2px 0 5px gray, -2px 0 5px gray;
 }
-.coustom-packag > button,
+
+.coustom-packag>button,
 .purchase-btn {
   background-color: #fd5e53;
   border: none;
@@ -6929,6 +6906,7 @@ Contact Page CSS
   padding: 10px 15px;
   font-weight: 600;
 }
+
 /* .purchase-btn{
 
 } */
@@ -6947,6 +6925,7 @@ Custom Animation Area CSS
     transform: translateX(25px);
   }
 }
+
 @keyframes left-right {
   50% {
     -webkit-transform: translateX(25px);
@@ -6997,9 +6976,11 @@ Custom Animation Area CSS
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -7009,9 +6990,11 @@ Custom Animation Area CSS
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -7021,9 +7004,11 @@ Custom Animation Area CSS
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -7033,11 +7018,14 @@ Custom Animation Area CSS
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
