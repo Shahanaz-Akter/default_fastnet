@@ -938,8 +938,8 @@ Header Responsive Area CSS
     text-align: center;
   }
 
-  .p__{
-    display:flex;
+  .p__ {
+    display: flex;
   }
 
 }
@@ -950,7 +950,7 @@ Header Responsive Area CSS
     margin-left: 13px;
     margin-right: 13px;
   }
- 
+
 }
 
 @media only screen and (min-width: 1550px) {
@@ -958,7 +958,7 @@ Header Responsive Area CSS
     top: 3px !important;
   }
 
-  
+
 }
 
 @media only screen and (max-width: 1199px) {

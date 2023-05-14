@@ -346,7 +346,7 @@ $(document).ready(function () {
 
     mobile_banking__.click(function () {
 
-        var mobile_payment = $('.mobile_payment');
+        var user_portal = $('.user_portal');
         var mobile_banking = $('.mobile_banking');
         var mobile_banking_class_present = mobile_banking.hasClass('d-none');
 
@@ -355,27 +355,27 @@ $(document).ready(function () {
 
         if (mobile_banking_class_present) {
             mobile_banking.removeClass('d-none');
-            mobile_payment.addClass('d-none');
+            user_portal.addClass('d-none');
 
         }
 
     });
 
 
-    var mobile_payment__ = $('.mobile_payment__');
+    var user_portal__ = $('.user_portal__');
 
-    mobile_payment__.click(function () {
+    user_portal__.click(function () {
 
         var mobile_banking1 = $('.mobile_banking');
-        var mobile_payment = $('.mobile_payment');
-        var mobile_payment_class_present = mobile_payment.hasClass('d-none');
+        var user_portal = $('.user_portal');
+        var user_portal_class_present = user_portal.hasClass('d-none');
 
 
         // console.log(mobile_payment);
-        console.log(mobile_payment_class_present);
+        console.log(user_portal_class_present);
 
-        if (mobile_payment_class_present) {
-            mobile_payment.removeClass('d-none');
+        if (user_portal_class_present) {
+            user_portal.removeClass('d-none');
             mobile_banking1.addClass('d-none');
         }
     });
